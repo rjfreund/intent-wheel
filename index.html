@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intent Wheel</title>
+    <style>
+        html, body {
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 100 100">
+        <ellipse cx="50" cy="0" rx="70" ry="10" stroke="green" stroke-width="1"/>
+        <!-- (((x-h)^2)/a^2) + ((y-k)^2)/b^2 = 1 -->
+        <!-- where center is at (h, k)-->
+        <!-- and a is horizontal radius, and b is vertical radius -->
+        <!-- ((x-50)^2)/70^2 + ((y-0)^2)/10^2 -->
+        <rect width="5" height="5" fill="white" stroke="black"/>
+    </svg>
+    <script src="client.js"></script>
+    <script>
+        function getEllipseCircumferencePointX(y, h, k, a, b){
+            h = 50; k = 0; y=-10; a=70; b=10;
+            // (((x-h)^2)/a^2) + ((y-k)^2)/b^2 = 1
+            var x = -1;
+            // (x)
+        }
+    </script>
+</body>
+</html>
