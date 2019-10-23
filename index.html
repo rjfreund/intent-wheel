@@ -12,19 +12,32 @@
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 100 100">
         <ellipse cx="50" cy="0" rx="70" ry="10" stroke="green" stroke-width="1"/>
+        <!-- https://courses.lumenlearning.com/boundless-algebra/chapter/the-circle-and-the-ellipse/ -->
         <!-- (((x-h)^2)/a^2) + ((y-k)^2)/b^2 = 1 -->
         <!-- where center is at (h, k)-->
         <!-- and a is horizontal radius, and b is vertical radius -->
         <!-- ((x-50)^2)/70^2 + ((y-0)^2)/10^2 -->
-        <rect width="5" height="5" fill="white" stroke="black"/>
+        <rect x="40" y="9" width="10" height="20" fill="white" stroke="black" stroke-width="1"/>
     </svg>
     <script src="client.js"></script>
     <script>
+        //TODO: Calculating a Point that lies on an Ellipse given an Angle
+        // https://math.stackexchange.com/questions/22064/calculating-a-point-that-lies-on-an-ellipse-given-an-angle
+
         function getEllipseCircumferencePointX(y, h, k, a, b){
-            h = 50; k = 0; y=-10; a=70; b=10;
+            h = 50; k = 0; y=10; a=70; b=10;
             // (((x-h)^2)/a^2) + ((y-k)^2)/b^2 = 1
             var x = -1;
-            // (x)
+            // ((x-50)^2)/70^2 + ((-10-0)^2)/10^2 = 1
+            // ((x-50)^2)/4900 + ((-10-0)^2)/100 = 1
+            // ((x-50)^2)/4900 + (100)/100 = 1
+            // ((x-50)^2)/4900 + 1 = 1
+            // ((x-50)^2)/4900 = 0
+            // (x-50)^2 = 0
+            // x-50 = 0
+            // x = 50
+            //set x to x - rectangle width to center rectangle
+            //subtract 1 from y input to align correctly
         }
     </script>
 </body>
